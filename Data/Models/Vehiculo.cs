@@ -1,8 +1,9 @@
 namespace Vehiculos20200904.Data.Models;
-
+using System.ComponentModel.DataAnnotations;
 public class Vehiculo
 {
-    public int vehiculoID { get; set; }
+    [Key]
+    public string? vehiculoID { get; set; }
     public string? Marca { get; set; }
     public string? Modelo { get; set; }
     public double Año { get; set; }
